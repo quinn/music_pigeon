@@ -1,0 +1,15 @@
+!!!
+%html{html_attrs('en')}
+  %head
+    %title= "Song Scraper"
+    %script{:src=> '/lib/jquery.js'}
+    %script{:src=> '/lib/jquery.tablesorter.js'}
+    %script{:src=> '/frontend.js'}
+    %style @import '/frontend.css';
+  %body
+    %ul#nav
+      %li
+        %a{:href=> '/songs'} Songs
+      %li
+        %a{:href=> '/keywords'} Keywords
+    =yield

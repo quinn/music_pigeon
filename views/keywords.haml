@@ -1,0 +1,8 @@
+%ul#keywords_list
+  -@keywords.each do |keyword|
+    %li
+      =keyword.word
+  %li#add_new
+    %a{ :href=> '#addNew'} Add a new one!
+    %form.hidden{:method=> 'post', :action=> '/keywords'}
+      %input{:type=> 'text', :name=> 'word'}/

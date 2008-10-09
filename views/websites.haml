@@ -1,0 +1,8 @@
+%ul#keywords_list
+  -@websites.each do |website|
+    %li
+      =website.url
+  %li#add_new
+    %a{ :href=> '#addNew'} Add a new one!
+    %form.hidden{:method=> 'post', :action=> '/websites'}
+      %input{:type=> 'text', :name=> 'url'}/

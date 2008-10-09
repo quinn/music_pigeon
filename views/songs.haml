@@ -1,0 +1,15 @@
+%table#songs
+  %thead
+    %tr
+      %th Title
+      %th Artist
+      %th Song Path
+  %tbody
+    -@songs.each do |song|
+      %tr{:id=> 'song-'+song.id.to_s}
+        %td{:class=> 'editable title'}
+          %span= song.title
+        %td{:class=> 'editable artist'}
+          %span= song.artist
+        %td{:class=> 'path'}
+          %span= song.path
