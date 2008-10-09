@@ -1,0 +1,11 @@
+it reads music blogs so you don't have to. 
+
+the code is crap. i didn't originally plan on open-sourcing (yeah, it's a verb) it but here we are. 
+
+TODO
+
+1. switch hypemachine for skreemr. 
+2. clean up the code (i haven't actually looked at it since i wrote it, which means i don't know what i'm committing)
+3. get 'frontent' working
+4. other stuff
+5. add sharing of some sort. wouldn't it be cool if your song_scrape could talk to my song_scrape?
